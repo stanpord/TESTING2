@@ -159,6 +159,46 @@ p {
   margin: 0 auto;
   display: block;
 }
+/* ===============================
+   MOLECULE BACKGROUND ANIMATION
+=============================== */
+
+.hero-molecule {
+  animation: moleculeDrift 40s linear infinite;
+}
+
+/* Slow background drift */
+@keyframes moleculeDrift {
+  0% {
+    background-position: center 0%;
+  }
+  50% {
+    background-position: center 8%;
+  }
+  100% {
+    background-position: center 0%;
+  }
+}
+
+/* Subtle light movement overlay */
+.hero-molecule::after {
+  animation: lightPulse 18s ease-in-out infinite;
+}
+
+@keyframes lightPulse {
+  0% {
+    opacity: 0.6;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.85;
+    transform: translateY(-6px);
+  }
+  100% {
+    opacity: 0.6;
+    transform: translateY(0);
+  }
+}
 
 /* ===============================
    TRUST STRIP
