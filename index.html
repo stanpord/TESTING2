@@ -4,31 +4,40 @@
   <meta charset="UTF-8" />
   <title>Research Peptides | Laboratory Use Only</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO (optional but recommended) -->
+  <meta
+    name="description"
+    content="High-purity research peptides supplied exclusively for laboratory and non-clinical research use. Certificates of Analysis available."
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
 <!-- =======================
-     TOP NAV MENU
+     FULL-WIDTH HEADER MENU
 ======================== -->
 <header class="top-nav">
-  <div class="container nav-grid">
-    <div class="brand">
-      <span class="brand-mark"></span>
-      <span class="brand-name">SBS LABS</span>
-    </div>
+  <div class="nav-inner">
+    <div class="nav-grid">
+      <div class="brand">
+        <span class="brand-mark"></span>
+        <span class="brand-name">SBS LABS</span>
+      </div>
 
-    <nav class="nav-links" aria-label="Primary navigation">
-      <a href="#home">Home</a>
-      <a href="#shop">Shop</a>
-      <a href="#coa">COAs</a>
-    </nav>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#coa">COAs</a>
+      </nav>
+    </div>
   </div>
 </header>
 
 <!-- =======================
-     HERO HEADER IMAGE
+     HERO / SCIENCE HEADER
 ======================== -->
 <section class="hero hero-image" id="home">
   <div class="container hero-grid">
@@ -44,6 +53,12 @@
         View Research Products
       </a>
     </div>
+
+    <img
+      src="images/vials/ghk-cu.png"
+      alt="GHK-CU research peptide vial"
+      class="hero-vial fade-in delay-3"
+    />
   </div>
 </section>
 
@@ -72,6 +87,7 @@
           src="images/vials/ghk-cu.png"
           alt="GHK-CU 10 mg research peptide vial"
           class="product-vial"
+          loading="lazy"
         />
         <h4>GHK-CU — 10 mg</h4>
         <a href="#ghk-cu" class="button small">View Details</a>
@@ -80,8 +96,9 @@
       <div class="product-card fade-in delay-1">
         <img
           src="images/vials/nad-plus.png"
-          alt="NAD+ 100 mg research peptide vial"
+          alt="NAD+ research peptide vial"
           class="product-vial"
+          loading="lazy"
         />
         <h4>NAD⁺ — 100 mg</h4>
         <a href="#nad-plus" class="button small">View Details</a>
@@ -90,8 +107,9 @@
       <div class="product-card fade-in delay-2">
         <img
           src="images/vials/tirzepatide.png"
-          alt="Tirzepatide 10 mg research peptide vial"
+          alt="Tirzepatide research peptide vial"
           class="product-vial"
+          loading="lazy"
         />
         <h4>Tirzepatide — 10 mg</h4>
         <a href="#tirzepatide" class="button small">View Details</a>
@@ -109,13 +127,14 @@
       src="images/vials/ghk-cu.png"
       alt="GHK-CU research peptide vial"
       class="product-detail-vial fade-in"
+      loading="lazy"
     />
 
     <div class="fade-in delay-1">
       <h2>GHK-CU — 10 mg</h2>
       <p>
-        Supplied exclusively for laboratory research. Molecular and structural
-        information is provided for educational reference only.
+        Supplied exclusively for laboratory research.
+        Molecular and structural information is provided for educational reference only.
       </p>
       <a href="#coa" class="button">Download COA</a>
       <p class="disclaimer">Not for human or veterinary use.</p>
@@ -132,6 +151,7 @@
       src="images/vials/nad-plus.png"
       alt="NAD+ research peptide vial"
       class="product-detail-vial fade-in"
+      loading="lazy"
     />
 
     <div class="fade-in delay-1">
@@ -155,6 +175,7 @@
       src="images/vials/tirzepatide.png"
       alt="Tirzepatide research peptide vial"
       class="product-detail-vial fade-in"
+      loading="lazy"
     />
 
     <div class="fade-in delay-1">
