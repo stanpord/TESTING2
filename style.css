@@ -1,4 +1,45 @@
 /* ===============================
+   IMAGE OPTIMIZATION
+=============================== */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Vial-specific tuning */
+.hero-vial {
+  width: 320px;
+}
+
+.product-vial {
+  width: 140px;
+}
+
+.product-detail-vial {
+  width: 280px;
+}
+/* ===============================
+   PEPTIRA SPACING SYSTEM
+=============================== */
+
+:root {
+  --container: 1280px;
+
+  /* vertical rhythm */
+  --space-xxl: 140px;
+  --space-xl: 120px;
+  --space-lg: 96px;
+  --space-md: 72px;
+  --space-sm: 48px;
+
+  /* horizontal gaps */
+  --gap-xl: 80px;
+  --gap-lg: 64px;
+  --gap-md: 48px;
+}
+/* ===============================
    GLOBAL / DARK LAB THEME
 =============================== */
 
@@ -34,7 +75,9 @@ body {
 }
 
 .section {
-  padding: var(--section-md) 0;
+  padding: var(--space-xl) 0;
+}
+
 }
 
 /* ===============================
@@ -98,10 +141,17 @@ p {
 }
 
 .hero-grid {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
   gap: var(--gap-lg);
-  align-items: center;
+}
+
+.products-grid {
+  gap: var(--gap-lg);
+}
+
+.product-grid {
+  gap: var(--gap-xl);
+}
+
 }
 
 .hero img {
